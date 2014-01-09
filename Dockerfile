@@ -1,5 +1,7 @@
 FROM ubuntu
  
+MAINTAINER SkyDB skydb.io
+
 RUN echo 'deb http://archive.ubuntu.com/ubuntu precise main universe' > /etc/apt/sources.list && \
     echo 'deb http://archive.ubuntu.com/ubuntu precise-updates universe' >> /etc/apt/sources.list && \
     apt-get update
